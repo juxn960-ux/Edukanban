@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduKanban - Iniciar Sesión</title>
+  
+  <link rel="stylesheet" href="../Css/Registro.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      /* Reemplaza '../img/img1.png' por la imagen que quieras de tu carpeta img */
+      background-image: linear-gradient(rgba(14, 9, 27, 0.8), rgba(14, 9, 27, 0.8)), url('../img/imgini.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BARRA SUPERIOR DE NAVEGACIÓN -->
+  <header class="navbar">
+    <a href="Principal.html" class="logo">
+      <span class="logo-icon">▌▌▌</span>
+      <span class="logo-text">EduKanban</span>
+    </a>
+    <nav class="nav-links">
+      <a href="Principal.html">INICIO</a>
+      <a href="Principal.html#nosotros">SOBRE NOSOTROS</a>
+      <a href="Principal.html#servicios">SERVICIOS</a>
+      <a href="Principal.html#contacto">CONTACTO</a>
+      <a href="Inicio.html" class="active">INICIAR SESIÓN</a>
+      <a href="Registro.html" class="btn-registro">REGÍSTRATE</a>
+    </nav>
+  </header>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <main class="contenedor-principal">
+    
+    <!-- LADO IZQUIERDO -->
+    <section class="lado-izquierdo">
+      <h1 class="titulo-principal">¡Qué bueno verte de nuevo!</h1>
+      <h2 class="subtitulo">INICIA SESIÓN EN EduKanban</h2>
+      <p class="descripcion">
+        Accede a tus tableros, gestiona tus materias y mantén el control de tus actividades académicas.
+      </p>
+    </section>
+
+    <!-- LADO DERECHO: FORMULARIO -->
+    <section class="lado-derecho">
+      <div class="formulario-wrapper">
+        <h3 class="form-titulo">Iniciar Sesión</h3>
+
+        <form action="#" method="POST">
+          <div class="campo ancho-completo">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" placeholder="ingresa tu correo" required>
+          </div>
+
+          <div class="campo ancho-completo">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" placeholder="ingresa tu contraseña" required>
+          </div>
+
+          <div class="acciones-form">
+            <button type="submit" class="btn-crear">Entrar</button>
+            <br>
+            <!-- Enlaces para volver a la Página Principal o ir a Registro -->
+            <a href="Principal.html" class="enlace-login">&larr; Volver a la Página Principal</a>
+            <br>
+            <a href="Registro.html" class="enlace-login">¿No tienes cuenta? Regístrate aquí</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
